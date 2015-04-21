@@ -24,6 +24,7 @@
 		824A9FF417250BF300C9BD79 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824A9FF317250BF300C9BD79 /* QuartzCore.framework */; };
 		824A9FF617250BFA00C9BD79 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824A9FF517250BFA00C9BD79 /* Security.framework */; };
 		824A9FF817250C0100C9BD79 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824A9FF717250C0100C9BD79 /* SystemConfiguration.framework */; };
+		E737095A1AE6F0EB00ABF0F4 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73709591AE6F0EB00ABF0F4 /* Tasks.swift */; };
 		E751B17A1ADEF62F004B2294 /* libSalesforceSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B16F1ADEF62F004B2294 /* libSalesforceSecurity.a */; };
 		E751B17B1ADEF62F004B2294 /* libSalesforceOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1701ADEF62F004B2294 /* libSalesforceOAuth.a */; };
 		E751B17C1ADEF62F004B2294 /* libSalesforceSDKCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1711ADEF62F004B2294 /* libSalesforceSDKCore.a */; };
@@ -35,9 +36,11 @@
 		E751B1831ADEF62F004B2294 /* libMKNetworkKit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1781ADEF62F004B2294 /* libMKNetworkKit-iOS.a */; };
 		E751B1841ADEF62F004B2294 /* libSalesforceNetworkSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1791ADEF62F004B2294 /* libSalesforceNetworkSDK.a */; };
 		E751B1851ADF107A004B2294 /* libSalesforceCommonUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1761ADEF62F004B2294 /* libSalesforceCommonUtils.a */; };
-		E751B1871ADF11B7004B2294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E751B1861ADF11B7004B2294 /* Main.storyboard */; };
 		E751B1891ADF123D004B2294 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751B1881ADF123D004B2294 /* RootViewController.swift */; };
 		E779B6FB1ADEE2420093A2CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E779B6FA1ADEE2420093A2CD /* Images.xcassets */; };
+		E793BED41AE6CC3000FE354C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E793BED31AE6CC3000FE354C /* Main.storyboard */; };
+		E793BED61AE6EDB700FE354C /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E793BED51AE6EDB700FE354C /* TaskTableViewCell.swift */; };
+		E7BB5AC21AE70C61006318EC /* NavHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BB5AC11AE70C61006318EC /* NavHomeController.swift */; };
 		E7CF38C21ADEE40900634A13 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7CF38C01ADEE40900634A13 /* Settings.bundle */; };
 		E7CF38C31ADEE40900634A13 /* SalesforceSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7CF38C11ADEE40900634A13 /* SalesforceSDKResources.bundle */; };
 /* End PBXBuildFile section */
@@ -64,6 +67,7 @@
 		824A9FF317250BF300C9BD79 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		824A9FF517250BFA00C9BD79 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		824A9FF717250C0100C9BD79 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E73709591AE6F0EB00ABF0F4 /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		E751B16F1ADEF62F004B2294 /* libSalesforceSecurity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceSecurity.a; path = CloudTasks/Dependencies/SalesforceSecurity/libSalesforceSecurity.a; sourceTree = "<group>"; };
 		E751B1701ADEF62F004B2294 /* libSalesforceOAuth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceOAuth.a; path = CloudTasks/Dependencies/SalesforceOAuth/libSalesforceOAuth.a; sourceTree = "<group>"; };
 		E751B1711ADEF62F004B2294 /* libSalesforceSDKCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceSDKCore.a; path = CloudTasks/Dependencies/SalesforceSDKCore/libSalesforceSDKCore.a; sourceTree = "<group>"; };
@@ -75,9 +79,11 @@
 		E751B1771ADEF62F004B2294 /* libSmartSync.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSmartSync.a; path = CloudTasks/Dependencies/SmartSync/libSmartSync.a; sourceTree = "<group>"; };
 		E751B1781ADEF62F004B2294 /* libMKNetworkKit-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMKNetworkKit-iOS.a"; path = "CloudTasks/Dependencies/MKNetworkKit-iOS/libMKNetworkKit-iOS.a"; sourceTree = "<group>"; };
 		E751B1791ADEF62F004B2294 /* libSalesforceNetworkSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceNetworkSDK.a; path = CloudTasks/Dependencies/SalesforceNetworkSDK/libSalesforceNetworkSDK.a; sourceTree = "<group>"; };
-		E751B1861ADF11B7004B2294 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E751B1881ADF123D004B2294 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		E779B6FA1ADEE2420093A2CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E793BED31AE6CC3000FE354C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E793BED51AE6EDB700FE354C /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		E7BB5AC11AE70C61006318EC /* NavHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavHomeController.swift; sourceTree = "<group>"; };
 		E7CF38C01ADEE40900634A13 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E7CF38C11ADEE40900634A13 /* SalesforceSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SalesforceSDKResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,7 +177,7 @@
 				824A9E301724E2A900C9BD79 /* Classes */,
 				824A9E421724EF9800C9BD79 /* Resources */,
 				824A9DDF1724E16400C9BD79 /* Supporting Files */,
-				E751B1861ADF11B7004B2294 /* Main.storyboard */,
+				E793BED31AE6CC3000FE354C /* Main.storyboard */,
 			);
 			path = CloudTasks;
 			sourceTree = "<group>";
@@ -189,11 +195,14 @@
 		824A9E301724E2A900C9BD79 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E7E097541AE6F3D8009FF903 /* Models */,
 				824A9E391724E58200C9BD79 /* InitialViewController.xib */,
 				4FA276AB1987197500320B46 /* InitialViewController.swift */,
 				4FA276AA1987197400320B46 /* CloudTasks-Bridging-Header.h */,
 				4FA276AD19871C1C00320B46 /* AppDelegate.swift */,
 				E751B1881ADF123D004B2294 /* RootViewController.swift */,
+				E793BED51AE6EDB700FE354C /* TaskTableViewCell.swift */,
+				E7BB5AC11AE70C61006318EC /* NavHomeController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -206,6 +215,14 @@
 				E779B6FA1ADEE2420093A2CD /* Images.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		E7E097541AE6F3D8009FF903 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E73709591AE6F0EB00ABF0F4 /* Tasks.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +276,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E793BED41AE6CC3000FE354C /* Main.storyboard in Resources */,
 				824A9DE31724E16400C9BD79 /* InfoPlist.strings in Resources */,
 				E779B6FB1ADEE2420093A2CD /* Images.xcassets in Resources */,
 				824A9E3B1724E58200C9BD79 /* InitialViewController.xib in Resources */,
-				E751B1871ADF11B7004B2294 /* Main.storyboard in Resources */,
 				E7CF38C31ADEE40900634A13 /* SalesforceSDKResources.bundle in Resources */,
 				E7CF38C21ADEE40900634A13 /* Settings.bundle in Resources */,
 			);
@@ -275,6 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7BB5AC21AE70C61006318EC /* NavHomeController.swift in Sources */,
+				E793BED61AE6EDB700FE354C /* TaskTableViewCell.swift in Sources */,
+				E737095A1AE6F0EB00ABF0F4 /* Tasks.swift in Sources */,
 				4FA276AC1987197500320B46 /* InitialViewController.swift in Sources */,
 				4FA276AE19871C1C00320B46 /* AppDelegate.swift in Sources */,
 				E751B1891ADF123D004B2294 /* RootViewController.swift in Sources */,
@@ -389,7 +409,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CloudTasks/Classes/CloudTasks-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -418,7 +438,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CloudTasks/Classes/CloudTasks-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

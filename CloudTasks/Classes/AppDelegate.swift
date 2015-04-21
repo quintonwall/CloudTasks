@@ -102,7 +102,7 @@ class AppDelegate : UIResponder, UIApplicationDelegate
     func setupRootViewController()
     {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainController: AnyObject! = storyboard.instantiateViewControllerWithIdentifier("HomeView")
+        let mainController: AnyObject! = storyboard.instantiateViewControllerWithIdentifier("NavHomeController")
         self.window!.rootViewController = mainController as? UIViewController
     }
     
