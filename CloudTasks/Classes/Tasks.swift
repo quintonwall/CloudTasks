@@ -19,4 +19,15 @@ class Tasks: NSObject {
         
     }
     
+    func updateTaskStatus(id: String, status: String, delegate: SFRestDelegate) {
+        
+        let sharedInstance = SFRestAPI.sharedInstance()
+        let request = sharedInstance.requestForUpdateWithObjectType("CloudTasks__c", objectId: id, fields: ["Status__c" : status])
+        
+        
+        //todo: change to blocks
+        sharedInstance.send(request, delegate: delegate)
+        
+    }
+    
 }

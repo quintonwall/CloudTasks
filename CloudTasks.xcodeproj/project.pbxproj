@@ -25,6 +25,8 @@
 		824A9FF617250BFA00C9BD79 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824A9FF517250BFA00C9BD79 /* Security.framework */; };
 		824A9FF817250C0100C9BD79 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824A9FF717250C0100C9BD79 /* SystemConfiguration.framework */; };
 		E737095A1AE6F0EB00ABF0F4 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73709591AE6F0EB00ABF0F4 /* Tasks.swift */; };
+		E73817001AEACBA600E6E355 /* DetailsTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73816FF1AEACBA600E6E355 /* DetailsTaskViewController.swift */; };
+		E7383B801AEAAC780009E8F2 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7383B7F1AEAAC780009E8F2 /* NewTaskViewController.swift */; };
 		E751B17A1ADEF62F004B2294 /* libSalesforceSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B16F1ADEF62F004B2294 /* libSalesforceSecurity.a */; };
 		E751B17B1ADEF62F004B2294 /* libSalesforceOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1701ADEF62F004B2294 /* libSalesforceOAuth.a */; };
 		E751B17C1ADEF62F004B2294 /* libSalesforceSDKCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1711ADEF62F004B2294 /* libSalesforceSDKCore.a */; };
@@ -68,6 +70,8 @@
 		824A9FF517250BFA00C9BD79 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		824A9FF717250C0100C9BD79 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E73709591AE6F0EB00ABF0F4 /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		E73816FF1AEACBA600E6E355 /* DetailsTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTaskViewController.swift; sourceTree = "<group>"; };
+		E7383B7F1AEAAC780009E8F2 /* NewTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
 		E751B16F1ADEF62F004B2294 /* libSalesforceSecurity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceSecurity.a; path = CloudTasks/Dependencies/SalesforceSecurity/libSalesforceSecurity.a; sourceTree = "<group>"; };
 		E751B1701ADEF62F004B2294 /* libSalesforceOAuth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceOAuth.a; path = CloudTasks/Dependencies/SalesforceOAuth/libSalesforceOAuth.a; sourceTree = "<group>"; };
 		E751B1711ADEF62F004B2294 /* libSalesforceSDKCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceSDKCore.a; path = CloudTasks/Dependencies/SalesforceSDKCore/libSalesforceSDKCore.a; sourceTree = "<group>"; };
@@ -203,6 +207,8 @@
 				E751B1881ADF123D004B2294 /* RootViewController.swift */,
 				E793BED51AE6EDB700FE354C /* TaskTableViewCell.swift */,
 				E7BB5AC11AE70C61006318EC /* NavHomeController.swift */,
+				E7383B7F1AEAAC780009E8F2 /* NewTaskViewController.swift */,
+				E73816FF1AEACBA600E6E355 /* DetailsTaskViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -293,6 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7BB5AC21AE70C61006318EC /* NavHomeController.swift in Sources */,
+				E7383B801AEAAC780009E8F2 /* NewTaskViewController.swift in Sources */,
+				E73817001AEACBA600E6E355 /* DetailsTaskViewController.swift in Sources */,
 				E793BED61AE6EDB700FE354C /* TaskTableViewCell.swift in Sources */,
 				E737095A1AE6F0EB00ABF0F4 /* Tasks.swift in Sources */,
 				4FA276AC1987197500320B46 /* InitialViewController.swift in Sources */,

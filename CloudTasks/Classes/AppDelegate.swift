@@ -61,6 +61,12 @@ class AppDelegate : UIResponder, UIApplicationDelegate
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.initializeAppViewState();
         
+        //set font of title bar
+        if let barFont = UIFont(name: "HelveticaNeue-Medium", size: 26.0) {
+            UINavigationBar.appearance().titleTextAttributes =
+                [NSForegroundColorAttributeName: UIColor(red:1.00, green:0.89, blue:0.67, alpha:1.0),NSFontAttributeName:barFont]
+        }
+        window!.layer.contents = UIImage(named: "gradientbg")?.CGImage
         //
         // If you wish to register for push notifications, uncomment the line below.  Note that,
         // if you want to receive push notifications from Salesforce, you will also need to
