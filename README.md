@@ -1,2 +1,2 @@
 # CloudTasks
-Task iPhone and Apple Watch app using Salesforce.com Tasks
+iPhone and Apple Watch app using Tasks retrieved from Salesforce.com
