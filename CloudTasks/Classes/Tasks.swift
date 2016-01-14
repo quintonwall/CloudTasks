@@ -8,14 +8,28 @@
 
 import Foundation
 
+
 class Tasks: NSObject {
     
     func getTasks(delegate: SFRestDelegate) {
         
-        var sharedInstance = SFRestAPI.sharedInstance()
-        var request = sharedInstance.requestForQuery("SELECT Id, Assigned_To__c, Days_Overdue__c, Description__c, Due_Date__c, Priority__c, Status__c, Subject__c FROM CloudTasks__c WHERE Assigned_To__c = '"+SFUserAccountManager.sharedInstance().currentUser.accountIdentity.userId+"' ORDER BY Due_Date__c")
+        let sharedInstance = SFRestAPI.sharedInstance()
+        let request = sharedInstance.requestForQuery("SELECT Id, Assigned_To__c, Days_Overdue__c, Description__c, Due_Date__c, Priority__c, Status__c, Subject__c FROM CloudTasks__c WHERE Assigned_To__c = '"+SFUserAccountManager.sharedInstance().currentUser.accountIdentity.userId+"' ORDER BY Due_Date__c")
         
-        sharedInstance.send(request as SFRestRequest, delegate: delegate)
+        //example of using delegates to separate send logic from handling responses
+       
+        
+        sharedInstance.send(request, delegate: delegate)
+        
+      /*
+        sharedInstance.sendRESTRequest(request,
+            failBlock: {error in
+                //send back error
+            }) { response in
+                //todo: send back task
+        }
+        
+      */
         
     }
     
@@ -25,7 +39,7 @@ class Tasks: NSObject {
         let request = sharedInstance.requestForUpdateWithObjectType("CloudTasks__c", objectId: id, fields: ["Status__c" : status])
         
         
-        //todo: change to blocks
+        
         sharedInstance.send(request, delegate: delegate)
         
     }

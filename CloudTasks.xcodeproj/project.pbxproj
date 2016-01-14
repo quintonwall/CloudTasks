@@ -15,8 +15,6 @@
 		824A9DDD1724E16400C9BD79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824A9DDC1724E16400C9BD79 /* CoreGraphics.framework */; };
 		824A9DE31724E16400C9BD79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 824A9DE11724E16400C9BD79 /* InfoPlist.strings */; };
 		824A9E3B1724E58200C9BD79 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 824A9E391724E58200C9BD79 /* InitialViewController.xib */; };
-		824A9FE81725098F00C9BD79 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 824A9FE71725098F00C9BD79 /* libxml2.dylib */; };
-		824A9FEA1725099600C9BD79 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 824A9FE91725099600C9BD79 /* libz.dylib */; };
 		824A9FEC17250ADA00C9BD79 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824A9FEB17250ADA00C9BD79 /* CFNetwork.framework */; };
 		824A9FEE17250AE500C9BD79 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824A9FED17250AE500C9BD79 /* CoreData.framework */; };
 		824A9FF017250B7D00C9BD79 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824A9FEF17250B7C00C9BD79 /* MessageUI.framework */; };
@@ -27,31 +25,22 @@
 		E737095A1AE6F0EB00ABF0F4 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73709591AE6F0EB00ABF0F4 /* Tasks.swift */; };
 		E73817001AEACBA600E6E355 /* DetailsTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73816FF1AEACBA600E6E355 /* DetailsTaskViewController.swift */; };
 		E7383B801AEAAC780009E8F2 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7383B7F1AEAAC780009E8F2 /* NewTaskViewController.swift */; };
-		E751B17A1ADEF62F004B2294 /* libSalesforceSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B16F1ADEF62F004B2294 /* libSalesforceSecurity.a */; };
-		E751B17B1ADEF62F004B2294 /* libSalesforceOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1701ADEF62F004B2294 /* libSalesforceOAuth.a */; };
-		E751B17C1ADEF62F004B2294 /* libSalesforceSDKCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1711ADEF62F004B2294 /* libSalesforceSDKCore.a */; };
-		E751B17D1ADEF62F004B2294 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1721ADEF62F004B2294 /* libcrypto.a */; };
-		E751B17E1ADEF62F004B2294 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1731ADEF62F004B2294 /* libssl.a */; };
-		E751B17F1ADEF62F004B2294 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1741ADEF62F004B2294 /* libsqlcipher.a */; };
-		E751B1801ADEF62F004B2294 /* libSalesforceRestAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1751ADEF62F004B2294 /* libSalesforceRestAPI.a */; };
-		E751B1821ADEF62F004B2294 /* libSmartSync.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1771ADEF62F004B2294 /* libSmartSync.a */; };
-		E751B1831ADEF62F004B2294 /* libMKNetworkKit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1781ADEF62F004B2294 /* libMKNetworkKit-iOS.a */; };
-		E751B1841ADEF62F004B2294 /* libSalesforceNetworkSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1791ADEF62F004B2294 /* libSalesforceNetworkSDK.a */; };
-		E751B1851ADF107A004B2294 /* libSalesforceCommonUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E751B1761ADEF62F004B2294 /* libSalesforceCommonUtils.a */; };
 		E751B1891ADF123D004B2294 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751B1881ADF123D004B2294 /* RootViewController.swift */; };
 		E779B6FB1ADEE2420093A2CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E779B6FA1ADEE2420093A2CD /* Images.xcassets */; };
 		E793BED41AE6CC3000FE354C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E793BED31AE6CC3000FE354C /* Main.storyboard */; };
 		E793BED61AE6EDB700FE354C /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E793BED51AE6EDB700FE354C /* TaskTableViewCell.swift */; };
 		E7BB5AC21AE70C61006318EC /* NavHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BB5AC11AE70C61006318EC /* NavHomeController.swift */; };
 		E7CF38C21ADEE40900634A13 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7CF38C01ADEE40900634A13 /* Settings.bundle */; };
-		E7CF38C31ADEE40900634A13 /* SalesforceSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7CF38C11ADEE40900634A13 /* SalesforceSDKResources.bundle */; };
+		EA404A1F2F91D2B7E8667E9B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3164CC7B024C1B3E521A7F6 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B8E5B0381C068B1FA273748 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4F473D6F17E26DC7000CCDF3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		4FA276AA1987197400320B46 /* CloudTasks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudTasks-Bridging-Header.h"; sourceTree = "<group>"; };
 		4FA276AB1987197500320B46 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		4FA276AD19871C1C00320B46 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B1FBF76D59E703C45EC4928 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		824A9DD51724E16400C9BD79 /* CloudTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		824A9DD81724E16400C9BD79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		824A9DDA1724E16400C9BD79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,27 +58,21 @@
 		824A9FF317250BF300C9BD79 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		824A9FF517250BFA00C9BD79 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		824A9FF717250C0100C9BD79 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B3164CC7B024C1B3E521A7F6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E73709591AE6F0EB00ABF0F4 /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		E73816FF1AEACBA600E6E355 /* DetailsTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTaskViewController.swift; sourceTree = "<group>"; };
 		E7383B7F1AEAAC780009E8F2 /* NewTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
-		E751B16F1ADEF62F004B2294 /* libSalesforceSecurity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceSecurity.a; path = CloudTasks/Dependencies/SalesforceSecurity/libSalesforceSecurity.a; sourceTree = "<group>"; };
-		E751B1701ADEF62F004B2294 /* libSalesforceOAuth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceOAuth.a; path = CloudTasks/Dependencies/SalesforceOAuth/libSalesforceOAuth.a; sourceTree = "<group>"; };
-		E751B1711ADEF62F004B2294 /* libSalesforceSDKCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceSDKCore.a; path = CloudTasks/Dependencies/SalesforceSDKCore/libSalesforceSDKCore.a; sourceTree = "<group>"; };
 		E751B1721ADEF62F004B2294 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = CloudTasks/Dependencies/openssl/libcrypto.a; sourceTree = "<group>"; };
 		E751B1731ADEF62F004B2294 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = CloudTasks/Dependencies/openssl/libssl.a; sourceTree = "<group>"; };
 		E751B1741ADEF62F004B2294 /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsqlcipher.a; path = CloudTasks/Dependencies/sqlcipher/libsqlcipher.a; sourceTree = "<group>"; };
-		E751B1751ADEF62F004B2294 /* libSalesforceRestAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceRestAPI.a; path = CloudTasks/Dependencies/SalesforceRestAPI/libSalesforceRestAPI.a; sourceTree = "<group>"; };
-		E751B1761ADEF62F004B2294 /* libSalesforceCommonUtils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceCommonUtils.a; path = CloudTasks/Dependencies/SalesforceCommonUtils/libSalesforceCommonUtils.a; sourceTree = "<group>"; };
 		E751B1771ADEF62F004B2294 /* libSmartSync.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSmartSync.a; path = CloudTasks/Dependencies/SmartSync/libSmartSync.a; sourceTree = "<group>"; };
 		E751B1781ADEF62F004B2294 /* libMKNetworkKit-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMKNetworkKit-iOS.a"; path = "CloudTasks/Dependencies/MKNetworkKit-iOS/libMKNetworkKit-iOS.a"; sourceTree = "<group>"; };
-		E751B1791ADEF62F004B2294 /* libSalesforceNetworkSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceNetworkSDK.a; path = CloudTasks/Dependencies/SalesforceNetworkSDK/libSalesforceNetworkSDK.a; sourceTree = "<group>"; };
 		E751B1881ADF123D004B2294 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		E779B6FA1ADEE2420093A2CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E793BED31AE6CC3000FE354C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E793BED51AE6EDB700FE354C /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		E7BB5AC11AE70C61006318EC /* NavHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavHomeController.swift; sourceTree = "<group>"; };
 		E7CF38C01ADEE40900634A13 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		E7CF38C11ADEE40900634A13 /* SalesforceSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SalesforceSDKResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,19 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E751B1851ADF107A004B2294 /* libSalesforceCommonUtils.a in Frameworks */,
-				E751B17A1ADEF62F004B2294 /* libSalesforceSecurity.a in Frameworks */,
-				E751B17B1ADEF62F004B2294 /* libSalesforceOAuth.a in Frameworks */,
-				E751B17C1ADEF62F004B2294 /* libSalesforceSDKCore.a in Frameworks */,
-				E751B17D1ADEF62F004B2294 /* libcrypto.a in Frameworks */,
-				E751B17E1ADEF62F004B2294 /* libssl.a in Frameworks */,
-				E751B17F1ADEF62F004B2294 /* libsqlcipher.a in Frameworks */,
-				E751B1801ADEF62F004B2294 /* libSalesforceRestAPI.a in Frameworks */,
-				E751B1821ADEF62F004B2294 /* libSmartSync.a in Frameworks */,
-				E751B1831ADEF62F004B2294 /* libMKNetworkKit-iOS.a in Frameworks */,
-				E751B1841ADEF62F004B2294 /* libSalesforceNetworkSDK.a in Frameworks */,
-				824A9FE81725098F00C9BD79 /* libxml2.dylib in Frameworks */,
-				824A9FEA1725099600C9BD79 /* libz.dylib in Frameworks */,
 				4F473D7017E26DC7000CCDF3 /* ImageIO.framework in Frameworks */,
 				824A9DD91724E16400C9BD79 /* UIKit.framework in Frameworks */,
 				824A9DDB1724E16400C9BD79 /* Foundation.framework in Frameworks */,
@@ -121,6 +91,7 @@
 				824A9FF417250BF300C9BD79 /* QuartzCore.framework in Frameworks */,
 				824A9FF617250BFA00C9BD79 /* Security.framework in Frameworks */,
 				824A9FF817250C0100C9BD79 /* SystemConfiguration.framework in Frameworks */,
+				EA404A1F2F91D2B7E8667E9B /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +104,7 @@
 				824A9DDE1724E16400C9BD79 /* CloudTasks */,
 				824A9DD71724E16400C9BD79 /* Frameworks */,
 				824A9DD61724E16400C9BD79 /* Products */,
+				FE3938B820854629B175A790 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,17 +119,11 @@
 		824A9DD71724E16400C9BD79 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E751B16F1ADEF62F004B2294 /* libSalesforceSecurity.a */,
-				E751B1701ADEF62F004B2294 /* libSalesforceOAuth.a */,
-				E751B1711ADEF62F004B2294 /* libSalesforceSDKCore.a */,
 				E751B1721ADEF62F004B2294 /* libcrypto.a */,
 				E751B1731ADEF62F004B2294 /* libssl.a */,
 				E751B1741ADEF62F004B2294 /* libsqlcipher.a */,
-				E751B1751ADEF62F004B2294 /* libSalesforceRestAPI.a */,
-				E751B1761ADEF62F004B2294 /* libSalesforceCommonUtils.a */,
 				E751B1771ADEF62F004B2294 /* libSmartSync.a */,
 				E751B1781ADEF62F004B2294 /* libMKNetworkKit-iOS.a */,
-				E751B1791ADEF62F004B2294 /* libSalesforceNetworkSDK.a */,
 				4F473D6F17E26DC7000CCDF3 /* ImageIO.framework */,
 				824A9FE71725098F00C9BD79 /* libxml2.dylib */,
 				824A9FE91725099600C9BD79 /* libz.dylib */,
@@ -171,6 +137,7 @@
 				824A9FF517250BFA00C9BD79 /* Security.framework */,
 				824A9FF717250C0100C9BD79 /* SystemConfiguration.framework */,
 				824A9DD81724E16400C9BD79 /* UIKit.framework */,
+				B3164CC7B024C1B3E521A7F6 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -217,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				E7CF38C01ADEE40900634A13 /* Settings.bundle */,
-				E7CF38C11ADEE40900634A13 /* SalesforceSDKResources.bundle */,
 				E779B6FA1ADEE2420093A2CD /* Images.xcassets */,
 			);
 			name = Resources;
@@ -231,6 +197,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		FE3938B820854629B175A790 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B8E5B0381C068B1FA273748 /* Pods.debug.xcconfig */,
+				5B1FBF76D59E703C45EC4928 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 824A9DFB1724E16400C9BD79 /* Build configuration list for PBXNativeTarget "CloudTasks" */;
 			buildPhases = (
+				7112CC08A9A5DE748C21CD2C /* Check Pods Manifest.lock */,
 				824A9DD11724E16400C9BD79 /* Sources */,
 				824A9DD21724E16400C9BD79 /* Frameworks */,
 				824A9DD31724E16400C9BD79 /* Resources */,
+				64ADEC6CD739EC913B1BB129 /* Copy Pods Resources */,
+				66ADD2D3E693800343B4F2BF /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,7 +235,8 @@
 		824A9DCD1724E16400C9BD79 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = salesforce;
 			};
 			buildConfigurationList = 824A9DD01724E16400C9BD79 /* Build configuration list for PBXProject "CloudTasks" */;
@@ -286,12 +265,59 @@
 				824A9DE31724E16400C9BD79 /* InfoPlist.strings in Resources */,
 				E779B6FB1ADEE2420093A2CD /* Images.xcassets in Resources */,
 				824A9E3B1724E58200C9BD79 /* InitialViewController.xib in Resources */,
-				E7CF38C31ADEE40900634A13 /* SalesforceSDKResources.bundle in Resources */,
 				E7CF38C21ADEE40900634A13 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64ADEC6CD739EC913B1BB129 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66ADD2D3E693800343B4F2BF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7112CC08A9A5DE748C21CD2C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		824A9DD11724E16400C9BD79 /* Sources */ = {
@@ -337,6 +363,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -353,10 +380,10 @@
 					"$(OBJROOT)/UninstalledProducts/Headers",
 					"$(PROJECT_DIR)/${PRODUCT_NAME}/Dependencies/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/${PRODUCT_NAME}/Dependencies/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "CloudTasks/Classes/CloudTasks-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -383,10 +410,10 @@
 					"$(BUILT_PRODUCTS_DIR)/Headers",
 					"$(OBJROOT)/UninstalledProducts/Headers",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/${PRODUCT_NAME}/Dependencies/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "CloudTasks/Classes/CloudTasks-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -394,6 +421,7 @@
 		};
 		824A9DFC1724E16400C9BD79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B8E5B0381C068B1FA273748 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -403,17 +431,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudTasks/CloudTasks-Prefix.pch";
 				INFOPLIST_FILE = "CloudTasks/CloudTasks-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/CloudTasks/Dependencies/SalesforceCommonUtils",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_PREFIX).$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CloudTasks/Classes/CloudTasks-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -424,6 +444,7 @@
 		};
 		824A9DFD1724E16400C9BD79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B1FBF76D59E703C45EC4928 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -433,17 +454,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudTasks/CloudTasks-Prefix.pch";
 				INFOPLIST_FILE = "CloudTasks/CloudTasks-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/CloudTasks/Dependencies/SalesforceCommonUtils",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_PREFIX).$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CloudTasks/Classes/CloudTasks-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";

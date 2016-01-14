@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RootViewController : UITableViewController, SFRestDelegate, UITableViewDelegate,UITableViewDataSource
+class RootViewController : UITableViewController, SFRestDelegate
 {
     var tasksModel = Tasks()
     var dataRows = NSArray()
@@ -63,7 +63,7 @@ class RootViewController : UITableViewController, SFRestDelegate, UITableViewDel
             let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath:indexPath) as! TaskTableViewCell
         
-        var obj : AnyObject! =  self.dataRows.objectAtIndex(indexPath.row)
+        let obj : AnyObject! =  self.dataRows.objectAtIndex(indexPath.row)
         
         // Configure the cell...
         cell.setPriorityImage((obj.objectForKey("Priority__c") as? String)!)
@@ -80,15 +80,17 @@ class RootViewController : UITableViewController, SFRestDelegate, UITableViewDel
     
     // MARK: SFRestDelegate events.
     
+    //TODO: Change to blocks.
     func request(request: SFRestRequest?, didLoadResponse jsonResponse: AnyObject) {
         
-        if request?.method.value == 5 {
-            println("request:didLoadResponse: task update successful")
+        
+        if Int((request?.method.rawValue)!) == 5 {
+            print("request:didLoadResponse: task update successful")
             tasksModel.getTasks(self) //bit chatty, but ok for now
         }
         else {
-            var records = jsonResponse.objectForKey("records") as! NSArray
-            println("request:didLoadResponse: #records: \(records.count)");
+            let records = jsonResponse.objectForKey("records") as! NSArray
+            print("request:didLoadResponse: #records: \(records.count)");
             self.dataRows = records
             
             
@@ -100,16 +102,16 @@ class RootViewController : UITableViewController, SFRestDelegate, UITableViewDel
     }
     
     func request(request: SFRestRequest?, didFailLoadWithError error:NSError) {
-        println("In Error: \(error)")
+        print("In Error: \(error)")
     }
     
     func requestDidCancelLoad(request: SFRestRequest) {
-        println("In requestDidCancelLoad \(request)")
+        print("In requestDidCancelLoad \(request)")
     }
     
     
     func requestDidTimeout(request: SFRestRequest) {
-        println("In requestDidTimeout \(request)")
+        print("In requestDidTimeout \(request)")
     }
 
     
@@ -130,8 +132,10 @@ class RootViewController : UITableViewController, SFRestDelegate, UITableViewDel
         NSIndexPath) {
     }
     
-    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]? {
-            
+    
+ 
+    
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
         
         /*
         var deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Delete",  handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
@@ -139,16 +143,16 @@ class RootViewController : UITableViewController, SFRestDelegate, UITableViewDel
                     self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
             })
         */
-            var completeAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Complete",  handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
-                    var obj : AnyObject! =  self.dataRows.objectAtIndex(indexPath.row)
-                    var id = obj.objectForKey("Id") as? String
+            let completeAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Complete",  handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+                    let obj : AnyObject! =  self.dataRows.objectAtIndex(indexPath.row)
+                    let id = obj.objectForKey("Id") as? String
                     self.tasksModel.updateTaskStatus(id!, status: "Completed", delegate: self)
                     self.tableView.reloadData()
             })
         completeAction.backgroundColor = darkBrown
         
         
-            var changeStatusAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Change Status", handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+            let changeStatusAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Change Status", handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
         
                 // Create an option menu as an action sheet
                 let optionMenu = UIAlertController(title: nil, message: "Change Status?", preferredStyle: .ActionSheet)
@@ -157,8 +161,8 @@ class RootViewController : UITableViewController, SFRestDelegate, UITableViewDel
                 let nsAction = UIAlertAction(title: "Not Started", style: UIAlertActionStyle.Default, handler: {
                     (action:UIAlertAction!) -> Void in
                     
-                    var obj : AnyObject! =  self.dataRows.objectAtIndex(indexPath.row)
-                    var id = obj.objectForKey("Id") as? String
+                    let obj : AnyObject! =  self.dataRows.objectAtIndex(indexPath.row)
+                    let id = obj.objectForKey("Id") as? String
                     self.tasksModel.updateTaskStatus(id!, status: "Not Started", delegate: self)
                      self.tableView.reloadData()
                 })
@@ -167,8 +171,8 @@ class RootViewController : UITableViewController, SFRestDelegate, UITableViewDel
                 let ipAction = UIAlertAction(title: "In Progress", style: UIAlertActionStyle.Default, handler: {
                         (action:UIAlertAction!) -> Void in
                         
-                        var obj : AnyObject! =  self.dataRows.objectAtIndex(indexPath.row)
-                        var id = obj.objectForKey("Id") as? String
+                        let obj : AnyObject! =  self.dataRows.objectAtIndex(indexPath.row)
+                        let id = obj.objectForKey("Id") as? String
                         self.tasksModel.updateTaskStatus(id!, status: "In Progress", delegate: self)
                          self.tableView.reloadData()
                 })
@@ -177,8 +181,8 @@ class RootViewController : UITableViewController, SFRestDelegate, UITableViewDel
                 let compAction = UIAlertAction(title: "Complete", style: UIAlertActionStyle.Default, handler: {
                     (action:UIAlertAction!) -> Void in
                     
-                    var obj : AnyObject! =  self.dataRows.objectAtIndex(indexPath.row)
-                    var id = obj.objectForKey("Id") as? String
+                    let obj : AnyObject! =  self.dataRows.objectAtIndex(indexPath.row)
+                    let id = obj.objectForKey("Id") as? String
                     self.tasksModel.updateTaskStatus(id!, status: "Completed", delegate: self)
                     self.tableView.reloadData()
                 })
@@ -187,8 +191,8 @@ class RootViewController : UITableViewController, SFRestDelegate, UITableViewDel
                 let defAction = UIAlertAction(title: "Deferred", style: UIAlertActionStyle.Default, handler: {
                     (action:UIAlertAction!) -> Void in
                     
-                    var obj : AnyObject! =  self.dataRows.objectAtIndex(indexPath.row)
-                    var id = obj.objectForKey("Id") as? String
+                    let obj : AnyObject! =  self.dataRows.objectAtIndex(indexPath.row)
+                    let id = obj.objectForKey("Id") as? String
                     self.tasksModel.updateTaskStatus(id!, status: "Deferred", delegate: self)
                      self.tableView.reloadData()
                 })
@@ -197,8 +201,8 @@ class RootViewController : UITableViewController, SFRestDelegate, UITableViewDel
                 let wAction = UIAlertAction(title: "Waiting", style: UIAlertActionStyle.Default, handler: {
                         (action:UIAlertAction!) -> Void in
                         
-                        var obj : AnyObject! =  self.dataRows.objectAtIndex(indexPath.row)
-                        var id = obj.objectForKey("Id") as? String
+                        let obj : AnyObject! =  self.dataRows.objectAtIndex(indexPath.row)
+                        let id = obj.objectForKey("Id") as? String
                         self.tasksModel.updateTaskStatus(id!, status: "Waiting", delegate: self)
                         self.tableView.reloadData()
                         })
